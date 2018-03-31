@@ -113,16 +113,6 @@
 			<alignment>center</alignment>
 		</text>
 		
-		<text name="md_description">
-			<forceUppercase>1</forceUppercase>
-			<fontPath>./art/TinyUnicode.ttf</fontPath>
-			<fontSize>0.0444444444444444</fontSize>
-			<size>0.2447916666666667 0.437037037037037</size>
-			<alignment>left</alignment>
-			<lineSpacing>0.75</lineSpacing>
-			<color>ffffff</color>
-		</text>
-		
 		<datetime name="md_lastplayed">
 		<pos>1 1</pos>
 		<size>0.2 0.2</size>
@@ -139,12 +129,32 @@
 		</rating>
 		
 		<textlist name="gamelist">
-			<forceUppercase>1</forceUppercase>
+			<forceUppercase>0</forceUppercase>
 			<scrollSound>./sounds/se_sys_cursor.wav</scrollSound>
+			<fontPath>./art/NESCyrillic_gamelist.ttf</fontPath>
+			<alignment>left</alignment>
+			<horizontalMargin>0.0166666666666667</horizontalMargin>
 			<fontSize>0.0592592592592593</fontSize>
-			<selectorImagePath>./art/selector_bar${wide}.png</selectorImagePath>
+			<selectorImagePath>./art/selector_bar3.png</selectorImagePath>
 		</textlist>		
-			
+
+		<image name="gamelist_background" extra="true">
+			<path>./art/gamelist_background2.png</path>
+			<size>0.4825 0.7333333333333333</size>
+			<origin>0.55 0.5</origin>
+			<pos>0.74 0.5</pos>
+			<color>4d4d4d9a</color>
+		</image>
+
+		<image name="gamelist_outline" extra="true">
+			<path>./art/gamelist_outline2.png</path>
+			<size>0.4825 0.7333333333333333</size>
+			<origin>0.55 0.5</origin>
+			<pos>0.74 0.5</pos>
+			<color>ffffffbe</color>
+			<zIndex>200</zIndex>
+		</image>
+		
 		<sound name="launch">
 			<path>./sounds/se_sys_click_game.wav</path>
 		</sound>		
